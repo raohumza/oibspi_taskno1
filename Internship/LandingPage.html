@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LandingPage</title>
+    <style type="text/css">
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.2)), url('Main.jpg');
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+            height: 100px;
+            text-align: justify;
+            
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 50px;
+        }
+        body{
+            background-color: rgb(175, 187, 212);
+        }
+        .right{ 
+            font-size: 15px;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(235, 226, 226);
+            padding: 10px 20px;
+            position: relative;
+        }
+        a::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid rgb(56, 56, 134);
+            transition: 0.4s linear;
+        }
+        a:hover::before{
+            width: 90%;
+
+        }
+        h2{
+            color: rgb(255, 255, 255);
+            padding: 0px;
+        }
+        footer{
+            padding: 50px;
+            text-align: justify;
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(21, 17, 48);
+            height: 233px;
+            color: azure;
+        }
+        .left{
+            font-size: 3em;
+            letter-spacing: 3px;
+        }
+        .register{
+            background: rgb(56, 56, 134);
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        .text{
+            max-width: 650px;
+            position: absolute;
+            top: 38%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            color: white;
+        }
+        .text h2{
+            font-size: 3.5em;
+        }
+        .men a{
+            align-items: center;
+            text-align: justify;
+            text-decoration: none;
+            list-style: none;
+            font-weight: 100;
+            text-underline-offset: 0.5rem;
+        }
+        .men a:hover{
+            font-weight: 200;
+            font-size: large;
+            
+        }
+        .cars{
+            margin: 70px 0;
+        }
+        .col-1{
+            flex-basis: 30%;
+            min-width: 250px;
+            margin-bottom: 1px;
+            padding-bottom: 20px;
+        }
+        .col-1 img{
+            width: 300px;
+        }
+        .container{
+            max-width: 1500px;
+            margin: auto;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .row{
+            margin-left: 10%;           
+            display: flex;
+            align-items: center;
+        }
+        .small-container{
+            max-width: 2000px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        .h{
+            text-align: center;
+            padding-top: 25px;
+        }
+        .h1{
+            text-align: center;
+            padding-bottom: 18px;
+        }
+        hr{
+            height: 1.3px;
+            margin: 6px 8px;
+        }
+        p{
+            text-align: start;
+        }
+        .footer{
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+        .footer ul{
+            list-style: none;
+        }
+        footer .footer-rights{
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+        .footer > div{
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+       
+        <nav>
+            <div class="left">
+            <h2>
+                Car Villa
+            </h2>
+        </div>
+            <div class="right">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Cars</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="register">
+            <a href="#">Sign up</a>
+        </div>
+        </nav>
+        <section class="text">
+            <h2>Car buying</h2>
+            <br>
+            <div class="men">
+            
+                <a href="#">Shop New</a>
+                <a href="#">Shop Used</a>
+                <a href="#">Shop Electric</a>
+             </div>
+        </section>
+    </header>
+    <div class="container"></div>
+    <div class="cars">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="model1.png">
+                    <h3 class="h">2023 Mercedes S400</h3>
+                    <br>
+                    <h4>Capacity</h4>
+                    <br>
+                    <p>5 Adult</p>
+                    <hr>
+                    <p>4 Doors</p>
+                    <hr>
+                    <br>
+                    <h4>Engine</h4>
+                    <br>
+                    <p>3.0L Turbo Inline-6</p>
+                    <hr>
+                    <p>429 hp @ 5500 rpm</p>
+                    <hr>
+                    <p>384 lb-ft @ 1800 rpm</p>
+                    <hr>
+                    <br>
+                    <h4>Transmission</h4>
+                    <br>
+                    <p>9-Speed Automatic</p>
+                    <hr>
+                    <br>
+                    <h4>Starting Price</h4>
+                    <br>
+                    <p>$119,000</p>
+                    <hr>
+                </div>
+                <hr>
+                <div class="col-1">
+                    <img src="model2.png">
+                    <h3 class="h">2023 Mercedes S500</h3>
+                    <br>
+                    <h4>Capacity</h4>
+                    <br>
+                    <p>5 Adult</p>
+                    <hr>
+                    <p>4 Doors</p>
+                    <hr>
+                    <br>
+                    <h4>Engine</h4>
+                    <br>
+                    <p>4.0L Turbo Inline-6</p>
+                    <hr>
+                    <p>496 hp @ 5500 rpm</p>
+                    <hr>
+                    <p>516 lb-ft @ 1800 rpm</p>
+                    <hr>
+                    <br>
+                    <h4>Transmission</h4>
+                    <br>
+                    <p>9-Speed Automatic</p>
+                    <hr>
+                    <br>
+                    <h4>Starting Price</h4>
+                    <br>
+                    <p>$125,000</p>
+                    <hr>
+                </div>
+                <hr>
+                <div class="col-1">
+                    <br>
+                    <img src="model3.png">
+                    <br>
+                    <br>
+                    <h3 class="h1">2023 Mercedes S650</h3>
+                    <h4>Capacity</h4>
+                    <br>
+                    <p>5 Adult</p>
+                    <hr>
+                    <p>4 Doors</p>
+                    <hr>
+                    <br>
+                    <h4>Engine</h4>
+                    <br>
+                    <p>3.5L Turbo Inline-6</p>
+                    <hr>
+                    <p>450 hp @ 5500 rpm</p>
+                    <hr>
+                    <p>406 lb-ft @ 1800 rpm</p>
+                    <hr>
+                    <br>
+                    <h4>Transmission</h4>
+                    <br>
+                    <p>9-Speed Automatic</p>
+                    <hr>
+                    <br>
+                    <h4>Starting Price</h4>
+                    <br>
+                    <p>$130,000</p>
+                    <hr>
+
+                </div>
+                <hr>
+            </div>
+        </div>
+        
+    </div>
+</div>
+    <footer><div class="footer">
+        <div class="footer-first">
+            <h3>Car Villa</h3>
+        </div>
+        <div class="footer-second">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contect</li>
+            </ul>
+        </div>
+        <div class="footer-third">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contect</li>
+            </ul>
+        </div>
+        <div class="footer-fourth">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contect</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-rights">
+       Copyright &#169; carvilla.com | All rights reserved
+    </div>
+    </footer>
+    
+</body>
+</html>
